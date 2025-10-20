@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nossa História 💕</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/modules/effect-coverflow/effect-coverflow.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+<header class="header">
+  <div class="logo">💖 XoxoMarocas</div>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+  </button>
+  
+  <nav class="nav" id="navMenu">
+    <ul>
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#gallery">Galeria</a></li>
+      <li><a href="#counter">Amor</a></li>
+      <li><a href="#map">Lugares</a></li>
+      <li><a href="#polaroids">Polaroids</a></li>
+      <li><a href="#reasons">Motivos</a></li>
+      <li><a href="#countdown">Contagem</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+      <li><a href="#spotify">Músicas</a></li>
+      <li><a href="#words">Minhas Palavras</a></li>
+      <li><a href="#memory">Jogo</a></li>
+    </ul>
+  </nav>
+
+  <button id="toggleTheme" class="theme-btn">☀️</button>
+</header>
+
+<section id="hero" class="hero section section-bg">
+  <div class="hero-video-wrapper reveal">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/videohome.mp4" type="video/mp4">
+      Seu navegador não suporta vídeo.
+    </video>
+  </div>
+  <div class="hero-overlay reveal">
+    <div class="hero-carousel">
+      <span class="phrase active">Achou que esse iria passar em branco? kkkk</span>
+      <span class="phrase">Desde 19/07/2024 compartilhando nosso amor 💞</span>
+      <span class="phrase">Xoxonho e Marocas, sempre ❤️</span>
+    </div>
+    <button onclick="document.getElementById('timeline').scrollIntoView({behavior:'smooth'})">Entrar na nossa história</button>
+  </div>
+</section>
+
+<section id="timeline" class="section section-alt">
+  <h2>📅 Nossa História</h2>
+  <div class="timeline-grid">
+    <div class="timeline-card reveal"><h3>❤ O Começo</h3><p>O Começo foi bem devagar meu amor kkk com <br> 
+      o xoxonho como quem não quer nada chegando aos poucos e ganhando seu coração com livros e xadrez, desde então tudo tem sido tão intenso e gostoso que só me apego em viver cada dia, sem me apegar tanto no amanhã...</p><span class="date">04/04/2024</span></div>
+    <div class="timeline-card reveal"><h3>🎬 Nosso Primeiro Encontro</h3><p>Preciso dizer? kkkk coração saltando pela boca, suando frio, imaginando mil coisas <br>
+    mas quando te vi, quando veio correndo na minha direção e me abraçou, quando senti suas mãozinhas pequenas e gostosas kk eu tive a absoluta
+  certeza de que tinha encontrado a pessoa da minha vida e que depois dali, não importava o que acontecesse, você seria minha pra sempre meu amor. Eeee, um cineminha crocante kkkk</p><span class="date">19/02/2025</span></div>
+    <div class="timeline-card reveal"><h3>💌 Momentos Inesquecíveis</h3><p>Tem muitos, eu gosto muito das visitas no parque, tentando esquecer o local, era muito gostoso pq <br>
+    a gente tinha acabado de se ver pessoalmente e estava naquela neura de querer mais e mais um ao outro (até hj isso não passou), então eu levo eles como momentos bem marcantes, mas como eu disse, existem muitos mesmo, incontáveis</p><span class="date">2024</span></div>
+    <div class="timeline-card reveal"><h3>💍 O Futuro</h3><p>O futuro nós iremos construir, juntos, desde que você não acorde totalmente revoltada comigo nos dias em que eu estiver impossível hehe, <br>
+    brincadeiras à parte, o futuro nós de fato iremos construir meu amor, mas já tenho pequenas noções de como será e a cada vez que eu imagino ele tem a capacidade de ficar ainda melhor, eu quero correr pra lá? sim, mas quero também <br>
+  demorar o máximo possível, só pra não dar ao tempo o gostinho de estar passando sem que eu esteja ao seu lado, em todas as minhas melhores futuras lembranças e atuais memórias, tem você dando sentido a minha vida neném, Eu te amo muito! </p><span class="date">Para sempre 💞</span></div>
+  </div>
+</section>
+
+<section id="gallery" class="section section-bg">
+  <h2>📸 Nossa Galeria</h2>
+  <div class="swiper mySwiper reveal">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/casal1.jpg" alt="Foto 1"></div>
+      <div class="swiper-slide"><img src="img/casal2.jpg" alt="Foto 2"></div>
+      <div class="swiper-slide"><img src="img/casal3.jpg" alt="Foto 3"></div>
+      <div class="swiper-slide"><img src="img/casal4.jpg" alt="Foto 4"></div>
+      <div class="swiper-slide"><img src="img/casal5.jpg" alt="Foto 5"></div>
+      <div class="swiper-slide"><img src="img/casal6.jpg" alt="Foto 6"></div>
+       <div class="swiper-slide"><img src="img/casal7.jpg" alt="Foto 6"></div>
+        <div class="swiper-slide"><img src="img/casal8.jpg" alt="Foto 6"></div>
+         <div class="swiper-slide"><img src="img/casal9.jpg" alt="Foto 6"></div>
+          <div class="swiper-slide"><img src="img/casal10.jpg" alt="Foto 6"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<section id="counter" class="section section-alt counter">
+  <h2>⏳ Nosso Amor</h2>
+  <p>Falamos "Eu te amo" um para o outro desde 19/07/2024, desde então, se passaram:</p>
+  <div class="counter-box reveal">
+    <div><span id="years">0</span><small>ano</small></div>
+    <div><span id="months">0</span><small>meses</small></div>
+    <div><span id="days">0</span><small>dias</small></div>
+    <div><span id="hours">0</span><small>horas</small></div>
+    <div><span id="minutes">0</span><small>minutos</small></div>
+    <div><span id="seconds">0</span><small>segundos</small></div>
+  </div>
+</section>
+
+<section id="map" class="section section-bg">
+  <h2>🌍 Nossos Lugares Especiais</h2>
+  <p class="section-subtitle reveal">Alguns pontinhos no mapa que guardam nossas memórias.</p>
+  <h3 class="map-subtitle reveal">❤😅 Aqui nos encontramos pela primeira vez</h3>
+  <div class="map-wrapper reveal">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.068372134931!2d-46.50654982454602!3d-23.565987761762358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce676edd286c5f%3A0x4b56801d4922f046!2sShopping%20Aricanduva!5e0!3m2!1spt-BR!2sbr!4v1760911235858!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  <h3 class="map-subtitle reveal">😂 Já aqui aprontamos muito kkkkkkl</h3>
+  <div class="map-wrapper reveal">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.4906965612618!2d-46.416661324548926!3d-23.47882885856552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce63b076ca6c57%3A0x281b5f1bbc471e45!2sParque%20Jardim%20Helena!5e0!3m2!1spt-BR!2sbr!4v1760910921620!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<section id="polaroids" class="section section-alt">
+  <h2>🎞️ Cantinho das Polaroids</h2>
+  <p class="section-subtitle reveal">Momentos aleatórios e gostosos.</p>
+  <div class="polaroid-grid reveal">
+    <div class="polaroid-card reveal"><img src="img/pola1.jpg" alt="Lembrança 1"><p>Olhar de apaixonado!</p></div>
+    <div class="polaroid-card reveal"><img src="img/pola2.jpg" alt="Lembrança 2"><p> Xoxonho sendo pai presente</p></div>
+    <div class="polaroid-card reveal"><img src="img/pola3.jpg" alt="Lembrança 3"><p>Marocas super mãe</p></div>
+    <div class="polaroid-card reveal"><img src="img/pola4.jpg" alt="Lembrança 4"><p>Olhar de apaixonada</p></div>
+  </div>
+</section>
+
+<section id="reasons" class="section section-bg">
+  <h2>💌 Motivos pelos quais Eu Te Amo</h2>
+  <p class="section-subtitle reveal">(Alguns de mil de mil de mil milhões...)</p>
+  <div class="reasons-grid">
+    <div class="reason-card reveal"><h3>Pelo seu jeitinho alegre de ser, falante como o ligeirinho</h3><p>...</p></div>
+    <div class="reason-card reveal"><h3>Pela sua paciência infinita, que veio para suprir a minha que está em falta</h3><p>...</p></div>
+    <div class="reason-card reveal"><h3>Por ser quem você é (Toda linda, gostosa, cheirosa)</h3><p>...</p></div>
+  </div>
+</section>
+
+<section id="countdown" class="section section-alt counter">
+  <h2>⏳ Contagem Regressiva...</h2>
+  <p class="section-subtitle reveal">...para nossa próxima grande aventura!</p>
+  <div class="counter-box reveal" id="countdown-box">
+    <div><span id="c_days">0</span><small>dias</small></div>
+    <div><span id="c_hours">0</span><small>horas</small></div>
+    <div><span id="c_minutes">0</span><small>minutos</small></div>
+    <div><span id="c_seconds">0</span><small>segundos</small></div>
+  </div>
+</section>
+
+<section id="quiz" class="section section-bg">
+  <h2>❓ Quiz do Casal</h2>
+  <p class="section-subtitle reveal">Será que você lembra de tudo? Bora ver</p>
+  <div class="quiz-container reveal" id="quizContainer">
+    <div id="quizQuestion" class="quiz-question"></div>
+    <div id="quizAnswers" class="quiz-answers"></div>
+    <button id="quizNextBtn" class="quiz-next-btn">Próxima</button>
+    <div id="quizResult" class="quiz-result"></div>
+  </div>
+</section>
+
+<section id="spotify" class="section section-alt playlist">
+  <h2>🎵 Nossa Trilha Sonora</h2>
+  <p class="section-subtitle reveal">Algumas músicas que marcam a nossa história.</p>
+  
+  <div class="spotify-grid reveal">
+    
+    <div class="spotify-card reveal">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6O6qYUHbLjT0kGHm5rfp95?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>    
+    <div class="spotify-card reveal">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3PV8uIQnxD4Qiimn3x6PVr?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    </div>
+    
+    <div class="spotify-card reveal">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5RuScevud12uKYhhJkYTJ7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    </div>
+    
+    <div class="spotify-card reveal">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1de5qtvROLxLtMAQrmZjev?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    </div>
+    
+  </div>
+</section>
+<section id="words" class="section section-bg words">
+  <h2>💌 Minhas Palavras</h2>
+  <div class="words-box reveal" id="typewriter">
+    </div>
+</section>
+
+<section id="memory" class="section section-alt memory">
+  <h2>🧠 Jogo da Memória do Nosso Amor</h2>
+  <p>Combine as fotos e revele nossas lembranças</p>
+  <div class="memory-grid reveal" id="memoryGrid"></div>
+</section>
+
+
+<footer class="footer">
+  <p>Feito com 💕 pra você</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/modules/effect-coverflow/effect-coverflow.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
