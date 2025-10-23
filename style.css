@@ -376,7 +376,7 @@ body:not(.dark-mode) .quiz-container { background: var(--bg-color); }
    /* No mobile, as mensagens enviadas ficam à direita, recebidas à esquerda (já definido) */
    /* Ajuste na ordem visual no mobile (opcional, se column-reverse não agradar) */
   .message-input-area { padding: 0.5rem; }
-  .chat-input { display: none; } /* Esconde campo nome */
+  /*.chat-input { display: none; } /* Esconde campo nome */
   .textarea-button-wrapper { padding: 3px 5px; }
   .chat-textarea { font-size: 0.95rem; padding: 5px 8px; max-height: 80px; }
   .chat-button { padding: 6px; }
