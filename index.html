@@ -6,7 +6,6 @@
   <title>Nossa História 💕</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/modules/effect-coverflow/effect-coverflow.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -47,7 +46,6 @@
   <div class="hero-video-wrapper reveal">
     <video class="hero-video" autoplay muted loop playsinline><source src="videos/videohome.mp4" type="video/mp4"></video>
   </div>
-  <h1>ATUALIZAÇÃO! ROLE ATÉ O FIM </h1>
   <div class="hero-overlay reveal">
     <div class="hero-carousel"><span class="phrase active">Achou que esse iria passar em branco? kkkk</span><span class="phrase">Desde 19/07/2024 compartilhando nosso amor 💞</span><span class="phrase">Xoxonho e Marocas, sempre ❤️</span></div>
     <button onclick="document.getElementById('timeline').scrollIntoView({behavior:'smooth'})">Entrar na nossa história</button>
@@ -184,25 +182,19 @@
   <h2>💬 Chat da União</h2>
   <p class="section-subtitle reveal">Eu sabia que vc voltaria aqui, então... pq não tentar por aqui mesmo (ele nao notifica, entao volte pra ver se tem novas mensagens)</p>
   <div class="chat-container reveal">
-    
-    <div id="messageDisplay" class="message-display reveal">
-      <p class="loading-message">Carregando recados...</p>
-    </div>
-    
+    <div id="messageDisplay" class="message-display reveal"><p class="loading-message">Carregando mensagens...</p></div>
     <div class="message-input-area reveal">
       <input type="text" id="nameInput" placeholder="Seu apelido carinhoso..." class="chat-input">
       <div class="textarea-button-wrapper">
           <textarea id="messageInput" placeholder="Escreva seu recado aqui..." rows="1" class="chat-textarea"></textarea>
           <button id="sendMessageBtn" class="chat-button">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
           </button>
       </div>
     </div>
-
   </div>
 </section>
+
 <footer class="footer">
   <p>Feito com 💕 pra você</p>
 </footer>
@@ -210,7 +202,6 @@
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/modules/effect-coverflow/effect-coverflow.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
 <script src="script.js" defer></script>
 </body>
