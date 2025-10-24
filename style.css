@@ -325,7 +325,84 @@ body:not(.dark-mode) .quiz-container { background: var(--bg-color); }
 /* Footer */
 .footer { text-align:center; padding:1.5rem; margin-top:3rem; background:var(--primary-color); color:#fff; border-top-left-radius:20px; border-top-right-radius:20px; }
 
+/* =================================== */
+/* ==== ESTILO REGRAS DO CHAT ==== */
+/* =================================== */
+.chat-rules {
+  padding: 1.2rem 1.5rem; /* Mais padding vertical */
+  margin: 0 1rem 1.5rem 1rem; /* Margens laterais e inferior */
+  background-color: rgba(var(--primary-color-rgb), 0.05); /* Fundo bem sutil */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 1px dashed rgba(var(--primary-color-rgb), 0.3); /* Borda tracejada suave */
+  /* Sombra interna sutil para dar profundidade */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--text-color); /* Garante cor do texto */
+  opacity: 0.9; /* Leve transparência */
+}
 
+/* Ajuste no modo claro para não ficar muito branco */
+body:not(.dark-mode) .chat-rules {
+    background-color: rgba(var(--primary-color-rgb), 0.08);
+}
+
+
+.chat-rules h4 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem; /* Mais espaço abaixo do título */
+  font-size: 1.1rem; /* Tamanho do título */
+  font-weight: 700;
+  text-transform: uppercase; /* Opcional: Título em maiúsculas */
+  letter-spacing: 1px; /* Opcional: Espaçamento entre letras */
+}
+
+/* Estilo para o parágrafo introdutório (se usar a Opção 2) */
+.chat-rules p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.85; /* Um pouco menos transparente que o container */
+}
+
+.chat-rules ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; /* Remove margem padrão da lista */
+}
+
+.chat-rules li {
+  margin-bottom: 0.8rem; /* Espaço entre itens */
+  font-size: 0.9rem; /* Tamanho da fonte das regras */
+  line-height: 1.6; /* Espaçamento entre linhas */
+  display: flex; /* Para alinhar ícone e texto */
+  align-items: flex-start; /* Alinha ícone com o topo do texto */
+}
+
+/* Se for o último item da lista, remove a margem inferior */
+.chat-rules li:last-child {
+    margin-bottom: 0;
+}
+
+.chat-rules .rule-icon {
+    display: inline-block;
+    margin-right: 0.8rem; /* Mais espaço ao lado do ícone */
+    font-size: 1.1rem; /* Ícone/emoji um pouco maior */
+    min-width: 25px; /* Garante espaço consistente */
+    text-align: center;
+    margin-top: 1px; /* Ajuste fino vertical */
+    color: var(--primary-color); /* Ícone na cor primária */
+}
+
+/* Estilo para o texto em negrito (palavras-chave) */
+.chat-rules strong {
+    color: var(--primary-color);
+    font-weight: 700; /* Garante negrito */
+}
+
+/* =================================== */
+/* ==== FIM ESTILO REGRAS DO CHAT ==== */
+/* =================================== */
 /* === RESPONSIVIDADE === */
 @media(max-width: 768px){
   .section { padding: 60px 15px; }
@@ -381,4 +458,24 @@ body:not(.dark-mode) .quiz-container { background: var(--bg-color); }
   .chat-textarea { font-size: 0.95rem; padding: 5px 8px; max-height: 80px; }
   .chat-button { padding: 6px; }
   .chat-button svg { width: 20px; height: 20px; }
+  /* Ajuste responsivo para as regras do chat */
+  .chat-rules {
+      margin: 0 0 1rem 0; /* Remove margens laterais no mobile */
+      border-radius: 0; /* Remove bordas arredondadas */
+      border-left: none; /* Remove borda lateral */
+      border-right: none; /* Remove borda lateral */
+      padding: 1rem; /* Padding geral menor */
+      box-shadow: none; /* Remove sombra interna no mobile */
+  }
+  .chat-rules h4 {
+      font-size: 1rem; /* Título um pouco menor */
+  }
+  .chat-rules li {
+      font-size: 0.85rem; /* Regras um pouco menores */
+  }
+  .chat-rules .rule-icon {
+      font-size: 1rem; /* Ícone menor */
+      min-width: 20px;
+      margin-right: 0.5rem;
+  }
 }
